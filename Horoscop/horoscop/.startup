@@ -1,0 +1,13 @@
+FMain
+Horoscop
+0
+0
+0.0.5
+
+gb.image
+gb.gui
+gb.form
+gb.net
+gb.net.curl
+gb.util.web
+

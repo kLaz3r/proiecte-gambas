@@ -1,0 +1,66 @@
+' Gambas class file
+
+Public Function curlRequest() As Collection
+
+  Dim response As String
+  Dim collJson As Collection
+  Dim sign As String
+
+  If ComboBox1.Text = "" Then
+    Message.Error("Alege o zodie")
+    Return
+  Endif
+  sign = ComboBox1.Text
+
+  Shell "curl -X POST 'https://aztro.sameerkumar.website/?sign=" & sign & "&day=tomorrow'" To response
+  collJson = JSON.Decode(response, True)
+
+  Return collJson
+
+End
+
+Public Function httpRequest() As Collection
+
+  Dim hClient As New HttpClient
+  Dim collJson As Collection
+  Dim sign As String
+  Dim response As String
+
+  If ComboBox1.Text = "" Then
+    Message.Error("Alege o zodie")
+    Return
+  Endif
+  sign = ComboBox1.Text
+
+  hClient.Async = False
+  hClient.URL = "https://aztro.sameerkumar.website/?sign=" & sign & "&day=tomorrow"
+  hClient.Post("application/json", "")
+
+  If hClient.Status < 0 Then
+    Print "ERROR"
+  Else
+    If Lof(hClient) Then response = Read #hClient, Lof(hClient)
+  End If
+
+  collJson = JSON.Decode(response, True)
+
+  Return collJson
+
+End
+
+Public Sub ButtonSend_Click()
+
+  Dim collJson As Collection
+
+  collJson = httpRequest()
+
+  TextBoxCurrentDate.Text = collJson["current_date"]
+  TextBoxCompatibility.Text = collJson["compatibility"]
+  TextBoxLuckyTime.Text = collJson["lucky_time"]
+  TextBoxLuckyNumber.Text = collJson["lucky_number"]
+  TextBoxColor.Text = collJson["color"]
+  TextBoxDateRange.Text = collJson["date_range"]
+  TextBoxMood.Text = collJson["mood"]
+  TextAreaDescriere.Text = collJson["description"]
+
+End

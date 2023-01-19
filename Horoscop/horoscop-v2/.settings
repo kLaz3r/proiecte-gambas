@@ -1,0 +1,23 @@
+[DebugWindow]
+Count=0
+
+[Executable]
+DoNotIncrementVersion=False
+NoTestModule=False
+Path="horoscop-v2.gambas"
+
+[FCommit]
+LastCommit="compiled"
+
+[OpenFile]
+Active=2
+File[1]=".src/FMain.form"
+Count=2
+File[2]=".src/FMain.class:659.92"
+
+[Package]
+Dir="~/Desktop/Proiecte Gambas/Horoscop/Horoshop-v2-packages/"
+
+[Watches]
+Count=0
+

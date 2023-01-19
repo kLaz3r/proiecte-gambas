@@ -1,0 +1,29 @@
+[DebugWindow]
+Count=0
+
+[DebugWindow/hClient]
+Geometry=[30,26,642,409]
+
+[DebugWindow/hClient.Lines]
+Geometry=[30,26,642,409]
+
+[Executable]
+DoNotIncrementVersion=False
+NoTestModule=False
+Path="horoscop.gambas"
+
+[FCommit]
+LastCommit="Initial commit"
+
+[OpenFile]
+Active=2
+File[1]=".src/FMain.form"
+File[2]=".src/FMain.class:22.56"
+Count=2
+
+[Package]
+Dir="~/Desktop/Proiecte Gambas/Horoscop/horoscop-packages/"
+
+[Watches]
+Count=0
+
