@@ -1,0 +1,27 @@
+# Gambas Form File 3.0
+
+{ Form Form
+  MoveScaled(0,0,64,64)
+  { ValueBox1 ValueBox
+    MoveScaled(33,8,24,4)
+  }
+  { ValueBox2 ValueBox
+    MoveScaled(33,28,24,4)
+  }
+  { Button1 Button
+    MoveScaled(33,18,24,4)
+    Text = ("Calculul factorialului")
+  }
+  { Label1 Label
+    MoveScaled(4,3,59,4)
+    Text = ("Introduceti valoarea lui n in ValueBox-ul de mai jos")
+  }
+  { Label2 Label
+    MoveScaled(13,9,8,3)
+    Text = ("Valoare")
+  }
+  { Label3 Label
+    MoveScaled(13,28,9,3)
+    Text = ("Rezultat")
+  }
+}

@@ -1,0 +1,25 @@
+' Gambas class file
+
+Public Sub Button_Triunghi_Click()
+
+  ValueBox_Rezultat_Triunghi.Value = ValueBox_Baza_Triunghi.Value * ValueBox_Inaltimea_Triunghi.Value / 2
+
+End
+
+Public Sub Button_Cerc_Click()
+
+  ValueBox_Rezultat_Cerc.Value = Pi * ValueBox_Raza_Cerc.Value ^ 2
+
+End
+
+Public Sub Button_Dreptunghi_Click()
+
+  ValueBox_Rezultat_Dreptunghi.Value = ValueBox_Baza_Dreptunghi.Value * ValueBox_Inaltimea_Dreptunghi.Value
+
+End
+
+Public Sub Button_Trapez_Click()
+
+  ValueBox_Rezultat_Trapez.Value = (ValueBox_Baza1_Trapez.Value + ValueBox_Baza2_Trapez.Value) * ValueBox_Inaltimea_Trapez.Value / 2
+
+End

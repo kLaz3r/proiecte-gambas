@@ -1,0 +1,37 @@
+' Gambas class file
+
+Public Sub _new()
+
+  Label1.Text = "Welcome aboard fighter pilot!"
+
+End
+
+Public Sub ToggleButton1_Click()
+
+  If ToggleButton1.Value = True Then
+    ToggleButton1.Text = "Engine 1 ON" '
+  Else
+    ToggleButton1.Text = "Engine 1 OFF"
+  Endif
+  Test()
+
+End
+
+Public Sub ToggleButton2_Click()
+
+  If ToggleButton2.Value Then
+    ToggleButton2.Text = "Engine 2 ON"
+  Else
+    ToggleButton2.Text = "Engine 2 OFF"
+  Endif
+  Test()
+
+End
+
+Public Sub Test()
+
+  If (Not ToggleButton1.Value) And (Not ToggleButton2.Value) Then
+    Message.Warning("Iminent crash landing!")
+  Endif
+
+End

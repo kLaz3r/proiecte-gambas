@@ -1,0 +1,12 @@
+# Gambas Form File 3.0
+
+{ Form Form
+  MoveScaled(0,0,64,33)
+  { Label1 Label
+    MoveScaled(9,10,8,3)
+  }
+  { Button1 Button
+    MoveScaled(9.5,15,45,9)
+    Text = ("Download Manual")
+  }
+}

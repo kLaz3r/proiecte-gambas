@@ -1,0 +1,22 @@
+Format: 1.0
+Source: horoscop-gtk
+Binary: horoscop-gtk
+Architecture: all source
+Version: 0.0.5-0ubuntu1
+Checksums-Md5:
+ 915cfe4be6082014647e68ad697786b2 556 horoscop-gtk_0.0.5-0ubuntu1.dsc
+ f098225092eb0b5d786deb4be933980a 1292 horoscop-gtk_0.0.5-0ubuntu1_all.deb
+Checksums-Sha1:
+ 5a67953f76c90e91dfdb0fddc492c362204ff7c5 556 horoscop-gtk_0.0.5-0ubuntu1.dsc
+ 24619b5d4e51c8778f7fa9e81274ab330b698436 1292 horoscop-gtk_0.0.5-0ubuntu1_all.deb
+Checksums-Sha256:
+ 1c8f695c600c827c40c4b60da2028c9a40425dc6a6bbb2984da4fd4bd8795f69 556 horoscop-gtk_0.0.5-0ubuntu1.dsc
+ b61bbcee89704e3b6638469fcecc5c5cd37b4ee68cfb5221cd50d4d158a03e6d 1292 horoscop-gtk_0.0.5-0ubuntu1_all.deb
+Build-Origin: Fedora
+Build-Architecture: amd64
+Build-Date: Thu, 19 Jan 2023 13:50:36 +0200
+Environment:
+ DEB_BUILD_OPTIONS="parallel=12"
+ LANG="en_US.UTF-8"
+ LC_ALL="en_US.UTF-8"
+ SOURCE_DATE_EPOCH="1674129600"

@@ -1,0 +1,20 @@
+' Gambas class file
+
+Public Sub Form_Open()
+
+  TextBoxExp.Text = "a * Cos(Rad(x)) + b * Sin(Rad(y))"
+
+End
+
+Public Sub Button_Calculeaza_Click()
+
+  Dim Col As New Collection
+
+  Col["a"] = ValueBoxA.Value
+  Col["b"] = ValueBoxB.Value
+  Col["x"] = ValueBoxX.Value
+  Col["y"] = ValueBoxY.Value
+
+  ValueBox_Rezultat.Value = Eval(TextBoxExp.Text, Col)
+
+End

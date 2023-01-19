@@ -1,0 +1,53 @@
+# Gambas Form File 3.0
+
+{ Form Form
+  MoveScaled(0,0,64,34)
+  { Label1 Label
+    MoveScaled(5,6,8,4)
+    Text = ("a = ")
+  }
+  { Label2 Label
+    MoveScaled(5,10,8,4)
+    Text = ("b = ")
+  }
+  { Label3 Label
+    MoveScaled(5,14,8,4)
+    Text = ("x = ")
+  }
+  { Label4 Label
+    MoveScaled(5,18,8,4)
+    Text = ("y = ")
+  }
+  { ValueBoxA ValueBox
+    MoveScaled(10,6,24,4)
+  }
+  { ValueBoxB ValueBox
+    MoveScaled(10,10,24,4)
+  }
+  { ValueBoxY ValueBox
+    MoveScaled(10,18,24,4)
+  }
+  { ValueBoxX ValueBox
+    MoveScaled(10,14,24,4)
+  }
+  { TextBoxExp TextBox
+    MoveScaled(19,24,42,4)
+  }
+  { Label5 Label
+    MoveScaled(3,24,13,4)
+    Text = ("Expression")
+  }
+  { ValueBox_Rezultat ValueBox
+    MoveScaled(36,18,24,4)
+    ReadOnly = True
+  }
+  { Label6 Label
+    MoveScaled(36,14,24,4)
+    Alignment = Align.Center
+    Text = ("Rezultat:")
+  }
+  { Button_Calculeaza Button
+    MoveScaled(36,6,24,4)
+    Text = ("Calculeaza")
+  }
+}

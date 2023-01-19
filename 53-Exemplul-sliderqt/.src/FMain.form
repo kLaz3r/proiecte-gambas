@@ -1,0 +1,8 @@
+# Gambas Form File 3.0
+
+{ Form Form
+  MoveScaled(0,0,64,64)
+  { Slider1 Slider
+    MoveScaled(8,21,24,4)
+  }
+}

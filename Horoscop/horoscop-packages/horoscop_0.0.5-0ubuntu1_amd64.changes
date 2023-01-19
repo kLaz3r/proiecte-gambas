@@ -1,0 +1,31 @@
+Format: 1.8
+Date: Thu, 19 Jan 2023 12:00:00 +0000
+Source: horoscop
+Binary: horoscop
+Architecture: source all
+Version: 0.0.5-0ubuntu1
+Distribution: unstable
+Urgency: low
+Maintainer: nastu <nastu@fedora>
+Changed-By: nastu <nastu@fedora>
+Description:
+ horoscop   - Missing description.
+Changes:
+ horoscop (0.0.5-0ubuntu1) unstable; urgency=low
+ .
+   * New release version
+Checksums-Sha1:
+ 249d5f5ba28979909a5693622636e35281e0d49e 1123 horoscop_0.0.5-0ubuntu1.dsc
+ 323c3257c70ea0b4a916e9ebbeed19cf1c5463bd 1204 horoscop_0.0.5-0ubuntu1.diff.gz
+ 67d1aaf0d61cb51a636a3f3c10388a96d7bfccbc 20148 horoscop_0.0.5-0ubuntu1_all.deb
+ f1b43fc7fc811f67b3a6737f25101930c9692740 852 horoscop_0.0.5-0ubuntu1_amd64.buildinfo
+Checksums-Sha256:
+ 4a68f4901f794930cc17be267a2050e8667efc5bf72c816cf352b792ebe59cba 1123 horoscop_0.0.5-0ubuntu1.dsc
+ 15e491113266d370bc72443fc13a0d8ea48625cc85625132b543a2e9cbd34621 1204 horoscop_0.0.5-0ubuntu1.diff.gz
+ 8406f9763e69882e6120ed6f94a8733861bbd3ce0da970076aaad72febb0eb47 20148 horoscop_0.0.5-0ubuntu1_all.deb
+ d55208abbf16b3db812f024194ac505dd42d1f672550cf3b7a3018682db97c5d 852 horoscop_0.0.5-0ubuntu1_amd64.buildinfo
+Files:
+ 2d61ea6327b7d7cb14bf43d21f9882bb 1123 contrib/electronics optional horoscop_0.0.5-0ubuntu1.dsc
+ f1a529156f47d7c46c5519f2b718da98 1204 contrib/electronics optional horoscop_0.0.5-0ubuntu1.diff.gz
+ dbf46e8a651f38e050146c20ed274b58 20148 contrib/electronics optional horoscop_0.0.5-0ubuntu1_all.deb
+ 32536d8dc3541420f860ec18038dfeef 852 contrib/electronics optional horoscop_0.0.5-0ubuntu1_amd64.buildinfo

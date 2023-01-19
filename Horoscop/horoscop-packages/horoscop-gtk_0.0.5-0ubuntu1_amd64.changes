@@ -1,0 +1,31 @@
+Format: 1.8
+Date: Thu, 19 Jan 2023 12:00:00 +0000
+Source: horoscop-gtk
+Binary: horoscop-gtk
+Architecture: source all
+Version: 0.0.5-0ubuntu1
+Distribution: unstable
+Urgency: low
+Maintainer: nastu <nastu@fedora>
+Changed-By: nastu <nastu@fedora>
+Description:
+ horoscop-gtk - gtk package for Horoscop
+Changes:
+ horoscop-gtk (0.0.5-0ubuntu1) unstable; urgency=low
+ .
+   * New release version
+Checksums-Sha1:
+ 5a67953f76c90e91dfdb0fddc492c362204ff7c5 556 horoscop-gtk_0.0.5-0ubuntu1.dsc
+ 431f9c823580fca455b57256a0de48d9f6e1240e 812 horoscop-gtk_0.0.5-0ubuntu1.tar.gz
+ 24619b5d4e51c8778f7fa9e81274ab330b698436 1292 horoscop-gtk_0.0.5-0ubuntu1_all.deb
+ 82af4e6eec944516f1973765e98b3c26e40339cd 878 horoscop-gtk_0.0.5-0ubuntu1_amd64.buildinfo
+Checksums-Sha256:
+ 1c8f695c600c827c40c4b60da2028c9a40425dc6a6bbb2984da4fd4bd8795f69 556 horoscop-gtk_0.0.5-0ubuntu1.dsc
+ 310be845a46f02016cd6cdcd5c8d5914c11a5d1c5d8f36fc00298fb8157c7e54 812 horoscop-gtk_0.0.5-0ubuntu1.tar.gz
+ b61bbcee89704e3b6638469fcecc5c5cd37b4ee68cfb5221cd50d4d158a03e6d 1292 horoscop-gtk_0.0.5-0ubuntu1_all.deb
+ 2f50968ab84667453e203ba7d878b6dee60e038a2d8879aec07a6c69a307d7ea 878 horoscop-gtk_0.0.5-0ubuntu1_amd64.buildinfo
+Files:
+ 915cfe4be6082014647e68ad697786b2 556 contrib/electronics optional horoscop-gtk_0.0.5-0ubuntu1.dsc
+ 5fb397f0be8db1553f38bc2430de6eaa 812 contrib/electronics optional horoscop-gtk_0.0.5-0ubuntu1.tar.gz
+ f098225092eb0b5d786deb4be933980a 1292 contrib/electronics optional horoscop-gtk_0.0.5-0ubuntu1_all.deb
+ eab48333f37943909fdef597d0c0f0d3 878 contrib/electronics optional horoscop-gtk_0.0.5-0ubuntu1_amd64.buildinfo

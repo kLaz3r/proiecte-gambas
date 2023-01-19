@@ -1,0 +1,31 @@
+Format: 1.8
+Date: Thu, 19 Jan 2023 12:00:00 +0000
+Source: horoscop-v2-gtk
+Binary: horoscop-v2-gtk
+Architecture: source all
+Version: 0.0.3-1
+Distribution: unstable
+Urgency: low
+Maintainer: nastu <nastu@fedora>
+Changed-By: nastu <nastu@fedora>
+Description:
+ horoscop-v2-gtk - gtk package for horoscop-v2
+Changes:
+ horoscop-v2-gtk (0.0.3-1) unstable; urgency=low
+ .
+   * New release version
+Checksums-Sha1:
+ 1dfdfa4fbd9b1cb07da657788d31be202b158019 540 horoscop-v2-gtk_0.0.3-1.dsc
+ 5cf92019feb349bec0573637673f822e9075817e 804 horoscop-v2-gtk_0.0.3-1.tar.gz
+ 8d6072ddf0a5ee6740ef8bfdcce9aae7ca03701d 1284 horoscop-v2-gtk_0.0.3-1_all.deb
+ 481c4a6d53820917c277ccb64b5b2ec9d01f824b 853 horoscop-v2-gtk_0.0.3-1_amd64.buildinfo
+Checksums-Sha256:
+ a64a0ec890da0554ac104a48d97f3408f684d2e3199629c1635333f72ac41f80 540 horoscop-v2-gtk_0.0.3-1.dsc
+ 680c7fd10c82b59795f445bb2d43ddf2a609469c2fc33fc1479e5cc6721405f7 804 horoscop-v2-gtk_0.0.3-1.tar.gz
+ 16f7235499898bf7f4c6709da7aedb0736f1bc4df21f3f5b4f5b02a86ba5d62f 1284 horoscop-v2-gtk_0.0.3-1_all.deb
+ c53485ad103dc0354cde4a07fb6903156e84f290b26a5e210fdf64be50f15a3b 853 horoscop-v2-gtk_0.0.3-1_amd64.buildinfo
+Files:
+ 26fb3210cf858250d3aa1770ad30f5c8 540 contrib/admin optional horoscop-v2-gtk_0.0.3-1.dsc
+ 9023de7c13050bbae44a1564f65a3192 804 contrib/admin optional horoscop-v2-gtk_0.0.3-1.tar.gz
+ d8ee8f14e24488577154cbd95034d7ba 1284 contrib/admin optional horoscop-v2-gtk_0.0.3-1_all.deb
+ e77e694e84179920f9fc0c95c354e8dd 853 contrib/admin optional horoscop-v2-gtk_0.0.3-1_amd64.buildinfo

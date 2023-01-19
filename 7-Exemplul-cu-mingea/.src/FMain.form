@@ -1,0 +1,12 @@
+# Gambas Form File 3.0
+
+{ Form Form
+  MoveScaled(0,0,64,64)
+  { PictureBoxBall PictureBox
+    MoveScaled(6,5,39,36)
+    Picture = Picture.Load("ball.png")
+    AutoResize = True
+    Alignment = Align.Center
+    Mode = PictureBox.Cover
+  }
+}

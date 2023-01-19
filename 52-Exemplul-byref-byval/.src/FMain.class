@@ -1,0 +1,33 @@
+' Gambas class file
+
+Private Sub Schimba1(v1 As Integer, v2 As Integer)
+
+  Dim Aux As Integer
+
+  Aux = v1
+  v1 = v2
+  v2 = Aux
+
+End
+
+Private Sub Schimba2(ByRef v1 As Integer, ByRef v2 As Integer)
+
+  Dim Aux As Integer
+
+  Aux = v1
+  v1 = v2
+  v2 = Aux
+
+End
+
+Public Sub Button1_Click()
+
+  Schimba1(SpinBox1.Value, SpinBox2.Value)
+
+End
+
+Public Sub Button2_Click()
+
+  Schimba2(SpinBox1.Value, SpinBox2.Value)
+
+End

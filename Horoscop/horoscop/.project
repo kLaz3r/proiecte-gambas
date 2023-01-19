@@ -1,0 +1,24 @@
+# Gambas Project File 3.0
+Title=Horoscop
+Startup=FMain
+Version=0.0.5
+Component=gb.image
+Component=gb.gui
+Component=gb.form
+Component=gb.net
+Component=gb.net.curl
+Component=gb.util.web
+TabSize=2
+Language=en_US
+SourcePath=/home/nastu/Desktop/Proiecte Gambas/Horoscop/horoscop
+Maintainer=nastu
+Address=nastu@fedora
+License=General Public License
+PackageName=horoscop-0.0.5
+Packager=1
+Systems=fedora,ubuntu
+Menus=fedora:"Applet"
+Categories=fedora:"Applet"
+Groups=fedora:"Amusements/Games"
+Menus=ubuntu:"Applications/File Management"
+Groups=ubuntu:"electronics"

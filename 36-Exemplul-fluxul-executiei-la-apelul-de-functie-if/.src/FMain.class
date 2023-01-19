@@ -1,0 +1,25 @@
+' Gambas class file
+
+Public Sub Button1_Click()
+
+  Dim Value As Integer
+  Value = IIf(SpinBox1.Value >= SpinBox2.Value, VariantaTrue(), VariantaFalse())
+  Message.Info("Valoarea rezultata este:" & Str(Value))
+
+End
+
+Public Sub VariantaTrue() As Integer
+
+  Print "Varianta True produce efecte!"
+  Print "Hello"
+  Return 10
+
+End
+
+Public Sub VariantaFalse() As Integer
+
+  Print "World !"
+  Print "Varianta False produce efecte !"
+  Return 20
+
+End

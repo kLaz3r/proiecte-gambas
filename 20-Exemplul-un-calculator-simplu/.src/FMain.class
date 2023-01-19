@@ -1,0 +1,29 @@
+' Gambas class file
+
+Public Sub Button_Plus_Click()
+
+  TextBox1.Text = Str$(SpinBox1.Value + SpinBox2.Value)
+
+End
+
+Public Sub Button_Minus_Click()
+
+  TextBox1.Text = Str$(SpinBox1.Value - SpinBox2.Value)
+
+End
+
+Public Sub Button_Inmultit_Click()
+
+  TextBox1.Text = Str$(SpinBox1.Value * SpinBox2.Value)
+
+End
+
+Public Sub Button_Impartit_Click()
+
+  If SpinBox2.Value <> 0 Then
+    TextBox1.Text = Str$(SpinBox1.Value / SpinBox2.Value)
+  Else
+    TextBox1.Text = "Div 0"
+  Endif
+
+End

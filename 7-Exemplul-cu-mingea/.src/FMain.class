@@ -1,0 +1,26 @@
+' Gambas class file
+
+Public unghi As Float
+Public xc As Float
+Public yc As Float
+Public raza As Float
+Public alfa As Float
+
+Public Sub Form_Open()
+
+  unghi = 0
+  xc = 50
+  yc = 50
+  raza = 30
+  PictureBoxBall_MouseWheel()
+
+End
+
+Public Sub PictureBoxBall_MouseWheel()
+
+  unghi = unghi + 1
+  alfa = unghi / 180 * Pi
+  PictureBoxBall.X = xc + raza * Cos(alfa)
+  PictureBoxBall.Y = yc + raza * Sin(alfa)
+
+End

@@ -1,0 +1,22 @@
+Format: 1.0
+Source: horoscop-qt5
+Binary: horoscop-qt5
+Architecture: all source
+Version: 0.0.5-0ubuntu1
+Checksums-Md5:
+ 916ed50e0775e8552b6b72bf26e42798 556 horoscop-qt5_0.0.5-0ubuntu1.dsc
+ 03d8b8146be0d80c37f92ab169b9e1ee 1292 horoscop-qt5_0.0.5-0ubuntu1_all.deb
+Checksums-Sha1:
+ a35be845206cc138dfc91e0e51c8154cdd8fb155 556 horoscop-qt5_0.0.5-0ubuntu1.dsc
+ 6af6aca856424ccb81ee1f5305baf383ab0814c7 1292 horoscop-qt5_0.0.5-0ubuntu1_all.deb
+Checksums-Sha256:
+ 89f3987dfa4356744d77725c7ec1a3fd8cb5209bf28e5075dea818d4ed2fe1be 556 horoscop-qt5_0.0.5-0ubuntu1.dsc
+ c37d281b273420302bb743ca3f84192daa845d411c066f053aad4531cbc35d6c 1292 horoscop-qt5_0.0.5-0ubuntu1_all.deb
+Build-Origin: Fedora
+Build-Architecture: amd64
+Build-Date: Thu, 19 Jan 2023 13:50:39 +0200
+Environment:
+ DEB_BUILD_OPTIONS="parallel=12"
+ LANG="en_US.UTF-8"
+ LC_ALL="en_US.UTF-8"
+ SOURCE_DATE_EPOCH="1674129600"

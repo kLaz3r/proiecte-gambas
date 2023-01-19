@@ -1,0 +1,11 @@
+' Gambas class file
+
+Public Sub RadioButoane_Click()
+
+  If RadioButton2.Value == True Then
+    Message.Error("IPhone nu rulează Android !")
+  Else
+    Message.Info("Rulează Android !")
+  Endif
+
+End

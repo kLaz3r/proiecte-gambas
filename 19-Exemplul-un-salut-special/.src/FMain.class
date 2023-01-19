@@ -1,0 +1,9 @@
+' Gambas class file
+
+Public Sub Button1_Click()
+
+  Print "Ma bucur sa lucrez cu tine ", Nume_Intercolutor.Text, "!";
+  Raspuns.Text = "Ma bucur sa lucrez cu tine"
+  Nume.Text = Nume_Intercolutor.Text
+
+End

@@ -1,0 +1,9 @@
+# Gambas Project File 3.0
+Title=29-Exemplul-starfield
+Startup=MMain
+Version=0.0.1
+Component=gb.image
+Component=gb.sdl2
+Component=gb.opengl
+Language=en_US
+Packager=1

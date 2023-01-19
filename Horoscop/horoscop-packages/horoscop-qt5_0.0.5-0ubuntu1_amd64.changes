@@ -1,0 +1,31 @@
+Format: 1.8
+Date: Thu, 19 Jan 2023 12:00:00 +0000
+Source: horoscop-qt5
+Binary: horoscop-qt5
+Architecture: source all
+Version: 0.0.5-0ubuntu1
+Distribution: unstable
+Urgency: low
+Maintainer: nastu <nastu@fedora>
+Changed-By: nastu <nastu@fedora>
+Description:
+ horoscop-qt5 - qt5 package for Horoscop
+Changes:
+ horoscop-qt5 (0.0.5-0ubuntu1) unstable; urgency=low
+ .
+   * New release version
+Checksums-Sha1:
+ a35be845206cc138dfc91e0e51c8154cdd8fb155 556 horoscop-qt5_0.0.5-0ubuntu1.dsc
+ e87513aa5f4d66373f32d9d180ef19efaaea52fc 811 horoscop-qt5_0.0.5-0ubuntu1.tar.gz
+ 6af6aca856424ccb81ee1f5305baf383ab0814c7 1292 horoscop-qt5_0.0.5-0ubuntu1_all.deb
+ 657f5222a52b95a37d1e3c5ae1290896fc022568 878 horoscop-qt5_0.0.5-0ubuntu1_amd64.buildinfo
+Checksums-Sha256:
+ 89f3987dfa4356744d77725c7ec1a3fd8cb5209bf28e5075dea818d4ed2fe1be 556 horoscop-qt5_0.0.5-0ubuntu1.dsc
+ 73f6b2fdd18bd98b25cf32bb2d7840ba583c39dc86884ac5290a184c2b1cb389 811 horoscop-qt5_0.0.5-0ubuntu1.tar.gz
+ c37d281b273420302bb743ca3f84192daa845d411c066f053aad4531cbc35d6c 1292 horoscop-qt5_0.0.5-0ubuntu1_all.deb
+ 3f94ec422aa837812c6d56c0262f9c1eeb5fcbfcbbb76e93efdebc2c62b70da7 878 horoscop-qt5_0.0.5-0ubuntu1_amd64.buildinfo
+Files:
+ 916ed50e0775e8552b6b72bf26e42798 556 contrib/electronics optional horoscop-qt5_0.0.5-0ubuntu1.dsc
+ f61bdbcda03654db8bf910ed45ef30d4 811 contrib/electronics optional horoscop-qt5_0.0.5-0ubuntu1.tar.gz
+ 03d8b8146be0d80c37f92ab169b9e1ee 1292 contrib/electronics optional horoscop-qt5_0.0.5-0ubuntu1_all.deb
+ 80f90403967e45d8fe4f4c31b47fbea1 878 contrib/electronics optional horoscop-qt5_0.0.5-0ubuntu1_amd64.buildinfo

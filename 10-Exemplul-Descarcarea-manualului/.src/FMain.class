@@ -1,0 +1,30 @@
+' Gambas class file
+
+Public Sub Button1_Click()
+
+  Dim hProc As Process
+  Dim myURL As String
+
+  myURL = "http://distro.ibiblio.org/vectorlinux/Uelsk8s/GAMBAS/gambas-beginner-guide.pdf"
+  hProc = Exec ["curl", myURL, "-o", User.Home & "/" & "New-gambas-beginner-guide.pdf"]
+  Do While hProc.State = Process.Running
+
+    Select Case Label1.Text
+      Case "/"
+        Label1.Text = "-"
+      Case "-"
+        Label1.Text = "\\"
+      Case "\\"
+        Label1.Text = "|"
+      Case "|"
+
+        Label1.Text = "/"
+      Case Else
+        Label1.Text = "|"
+    End Select
+    Wait 0.1
+  Loop
+  Label1.Text = "INACTIV!"
+  Message.Info("Descărcare terminată!")
+
+End

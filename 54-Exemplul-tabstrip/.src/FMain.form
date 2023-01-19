@@ -1,0 +1,142 @@
+# Gambas Form File 3.0
+
+{ Form Form
+  MoveScaled(0,0,53,46)
+  { TabStrip1 TabStrip
+    MoveScaled(2,2,49,42)
+    Count = 4
+    Index = 0
+    Text = ("Triunghi")
+    { Panel1 Panel
+      MoveScaled(5.375,7.75,37.875,22.875)
+      { Label2 Label
+        MoveScaled(1,5.5,11,4)
+        Alignment = Align.Right
+        Text = ("Inaltimea")
+      }
+      { ValueBox_Inaltimea_Triunghi ValueBox
+        MoveScaled(13,5.5,24,4)
+      }
+      { Button_Triunghi Button
+        MoveScaled(1,10.25,36,7)
+        Text = ("Calculeaza")
+      }
+      { ValueBox_Rezultat_Triunghi ValueBox
+        MoveScaled(13,18,24,4)
+      }
+      { Label3 Label
+        MoveScaled(0,18,12,4)
+        Alignment = Align.Right
+        Text = ("Rezultat")
+      }
+      { ValueBox_Baza_Triunghi ValueBox
+        MoveScaled(13,0.75,24,4)
+      }
+      { Label1 Label
+        MoveScaled(4,0.75,8,4)
+        Alignment = Align.Right
+        Text = ("Baza")
+      }
+    }
+    Index = 1
+    Text = ("Cerc")
+    { Panel2 Panel
+      MoveScaled(5.375,7.75,37.875,22.875)
+      { Button_Cerc Button
+        MoveScaled(1,7.875,36,7)
+        Text = ("Calculeaza")
+      }
+      { ValueBox_Rezultat_Cerc ValueBox
+        MoveScaled(13,16.875,24,4)
+      }
+      { Label5 Label
+        MoveScaled(0,16.875,12,4)
+        Alignment = Align.Right
+        Text = ("Rezultat")
+      }
+      { ValueBox_Raza_Cerc ValueBox
+        MoveScaled(13,2,24,4)
+      }
+      { Label6 Label
+        MoveScaled(1.875,1.875,10,4)
+        Alignment = Align.Right
+        Text = ("Raza")
+      }
+    }
+    Index = 2
+    Text = ("Dreptunghi")
+    { Panel3 Panel
+      MoveScaled(5.375,7.75,37.875,22.875)
+      { Label4 Label
+        MoveScaled(1,5.5,11,4)
+        Alignment = Align.Right
+        Text = ("Inaltimea")
+      }
+      { ValueBox_Inaltimea_Dreptunghi ValueBox
+        MoveScaled(13,5.5,24,4)
+      }
+      { Button_Dreptunghi Button
+        MoveScaled(1,10.25,36,7)
+        Text = ("Calculeaza")
+      }
+      { ValueBox_Rezultat_Dreptunghi ValueBox
+        MoveScaled(13,18,24,4)
+      }
+      { Label7 Label
+        MoveScaled(0,18,12,4)
+        Alignment = Align.Right
+        Text = ("Rezultat")
+      }
+      { ValueBox_Baza_Dreptunghi ValueBox
+        MoveScaled(13,0.75,24,4)
+      }
+      { Label8 Label
+        MoveScaled(4,0.75,8,4)
+        Alignment = Align.Right
+        Text = ("Baza")
+      }
+    }
+    Index = 3
+    Text = ("Trapez")
+    { Panel4 Panel
+      MoveScaled(5.375,4.625,38,29)
+      { Button_Trapez Button
+        MoveScaled(1,16,36,7)
+        Text = ("Calculeaza")
+      }
+      { Label10 Label
+        MoveScaled(0,24,12,4)
+        Alignment = Align.Right
+        Text = ("Rezultat")
+      }
+      { Label11 Label
+        MoveScaled(4,1,8,4)
+        Alignment = Align.Right
+        Text = ("Baza 1")
+      }
+      { Label12 Label
+        MoveScaled(4,6,8,4)
+        Alignment = Align.Right
+        Text = ("Baza 2")
+      }
+      { Label9 Label
+        MoveScaled(1,11,11,4)
+        Alignment = Align.Right
+        Text = ("Inaltimea")
+      }
+      { ValueBox_Baza1_Trapez ValueBox
+        MoveScaled(13,1,24,4)
+      }
+      { ValueBox_Baza2_Trapez ValueBox
+        MoveScaled(13,6,24,4)
+      }
+      { ValueBox_Inaltimea_Trapez ValueBox
+        MoveScaled(13,11,24,4)
+      }
+      { ValueBox_Rezultat_Trapez ValueBox
+        MoveScaled(13,24,24,4)
+      }
+    }
+    Index = 0
+  }
+}

@@ -1,0 +1,86 @@
+' Gambas module file
+
+Public screen As New Window As "screen"
+Public imgX As Integer
+Public imgY As Integer
+
+Public Struct Star
+  x As Integer
+  y As Integer
+  speed As Integer
+End Struct
+
+Private Starfield As New Star[]
+Private img As Image
+Private rotation As Integer = 0
+
+Public Sub Main()
+
+  Dim i As Integer
+  Dim stars As Star
+
+  Randomize
+  With screen
+    .Framerate = 60
+    .Resizable = False
+    .Show()
+  End With
+  imgX = screen.Width - 128
+  imgY = screen.Height - 128
+  img = Image.Load("nava.png")
+  For i = 0 To 100
+    Stars = New Star
+    Stars.x = Int(Rnd(Screen.Width))
+    Stars.y = Int(Rnd(screen.Height))
+    Stars.speed = Int(Rnd(1, 4))
+    Starfield.Push(stars)
+  Next
+
+End
+
+Public Sub screen_draw()
+
+  Dim Stars As Star
+
+  screen.Clear
+  For Each Stars In Starfield
+    Draw.ForeColor = &h444444& * Stars.speed
+    Draw.Line(Stars.x, Stars.y, Stars.x + (Stars.speed * 2), stars.y)
+    Stars.x += Stars.speed
+    If Stars.x > screen.Width Then
+      Stars.x = 0
+      Stars.y = Int(Rnd(screen.Height))
+      Stars.speed = Int(Rnd(1, 4))
+    Endif
+  Next
+  Draw.ForeColor = &hFFFFFF&
+  Draw.Text(Screen.Framerate, 10, Screen.Height - 40)
+  Draw.Rotate(rotation)
+  Draw.Image(img, imgX, imgY)
+  rotation = (rotation + 1) Mod 360
+
+End
+
+Public Sub screen_KeyPress()
+
+  Print "Key Press"
+  Select Case Key.Code
+    Case Key.Up
+      If imgY >= 10 Then
+        imgY -= 10
+      Endif
+    Case Key.Left
+      If imgX >= 10 Then
+        imgX -= 10
+      Endif
+    Case Key.Down
+      If imgY < screen.Height - 10
+        imgY += 10
+      Endif
+    Case Key.Right
+      If imgX < screen.Width - 10
+        imgX += 10
+      Endif
+  End Select
+
+End

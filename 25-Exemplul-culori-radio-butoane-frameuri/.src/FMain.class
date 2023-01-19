@@ -1,0 +1,44 @@
+' Gambas class file
+
+Public Sub Form_Load()
+
+  TextArea1.Top = 0
+
+End
+
+Public Sub optSus_Click()
+
+  TextArea1.Top = 0
+
+End
+
+Public Sub optJos_Click()
+
+  TextArea1.Top = FMain.Height -
+    TextArea1.Height
+
+End
+
+Public Sub optAlbastru_Click()
+
+  TextArea1.Background = Color.Blue
+
+End
+
+Public Sub optRosu_Click()
+
+  TextArea1.Background = Color.Red
+
+End
+
+Public Sub optVerde_Click()
+
+  TextArea1.Background = Color.Green
+
+End
+
+Public Sub optGalben_Click()
+
+  TextArea1.Background = Color.DarkYellow
+
+End

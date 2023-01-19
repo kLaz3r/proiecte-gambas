@@ -1,0 +1,17 @@
+' Gambas class file
+
+Public Sub Button1_Click()
+
+  Dim i As String
+  Dim Genuri As New Collection
+
+  Genuri["Rock"] = Rock.Value
+  Genuri["Clasica"] = Clasica.Value
+  Genuri["Jazz"] = Jazz.Value
+  Genuri["Populara"] = Populara.Value
+  TextArea1.Text = "Tu asculți "
+  For Each i In ["Rock", "Clasica", "Jazz", "Populara"]
+    If Genuri[i] <> 0 Then TextArea1.Text = TextArea1.Text & i & " "
+  Next
+
+End

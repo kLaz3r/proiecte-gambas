@@ -1,0 +1,93 @@
+' Gambas class file
+
+Static Public i As Integer
+Static Public j As Integer
+
+Public Sub _new()
+
+  i = 1
+  j = 0
+  GridView1.Columns.Count = 2
+  GridView1.Rows.Count = 10
+  GridView1.Columns.Width = 100
+  GridView1.Rows.Height = 36
+  GridView1[0, 0].Text = "Animal"
+  GridView1[0, 1].Text = "Felul"
+  GridView1[0, 0].Background = Color.Gray
+  GridView1[0, 1].Background = Color.Gray
+  GridView1[1, 0].Text = "leu"
+  GridView1[1, 1].Text = "salbatic"
+  GridView1[2, 0].Text = "vaca"
+  GridView1[2, 1].Text = "domestic"
+  GridView1[3, 0].Text = "vulpe"
+  GridView1[3, 1].Text = "salbatic"
+  GridView1[4, 0].Text = "pantera"
+  GridView1[4, 1].Text = "salbatic"
+  GridView1[5, 0].Text = "porc"
+  GridView1[5, 1].Text = "domestic"
+  GridView1[6, 0].Text = "tigru"
+  GridView1[6, 1].Text = "salbatic"
+  GridView1[7, 0].Text = "oaie"
+  GridView1[7, 1].Text = "domestic"
+  GridView1[8, 0].Text = "lup"
+  GridView1[8, 1].Text = "sălbatic"
+  GridView1[9, 0].Text = "ras"
+  GridView1[9, 1].Text = "salbatic"
+
+End
+
+Public Sub GridView1_KeyPress()
+
+  Dim L As Integer
+
+  Print "Key.Text="; Key.Text
+  Print "Key.Code="; Key.Code
+  GridView1[i, j].Background = Color.White
+  If (Key.Code == Key.Up) And (i >= 2) Then
+    i -= 1
+  Else If (Key.Code == Key.Down) And (i <= 8) Then
+    i += 1
+  Else If (Key.Code == Key.Left) And (j >= 1) Then
+    j -= 1
+  Else If (Key.Code == Key.Right) And (j <= 0) Then
+    j += 1
+  End If
+  GridView1[i, j].Background = Color.Yellow
+  If (Key.Code == Key.BackSpace) And (GridView1[i, j].Text <> "") Then
+    L = Len(GridView1[i, j].Text)
+    GridView1[i, j].Text = Left(GridView1[i, j].Text, L - 1)
+  Else
+    If Key.Code >= 32 Then
+      GridView1[i, j].Text = GridView1[i, j].Text & Key.Text
+    End If
+  End If
+
+End Sub
+
+Public Sub Button2_Click()
+
+  Quit
+
+End
+
+Public Sub Button1_Click()
+
+  Dim K As Integer
+
+  ListBox1.Clear
+  If RadioButton1.Value Then
+    For k = 1 To GridView1.Rows.Count - 1
+      If GridView1[k, 1].Text == "domestic" Then
+        ListBox1.Add(GridView1[k, 0].Text)
+
+      End If
+    Next
+  Else
+    For k = 1 To GridView1.Rows.Count - 1
+      If GridView1[k, 1].Text == "salbatic" Then
+        ListBox1.Add(GridView1[k, 0].Text)
+      End If
+    Next
+  End If
+
+End

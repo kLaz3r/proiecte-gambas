@@ -1,0 +1,60 @@
+' Gambas class file
+
+Public Sub Form_KeyRelease()
+
+  Select key.code
+    Case key.Tab
+      textlabel1.Text = "Key code is: " & key.Code & ", TAB."
+    Case key.BackSpace
+      textlabel1.Text = "Key code is: " & key.Code & ", Backspace."
+    Case key.CapsLock
+      textlabel1.Text = "Key code is: " & key.Code & ", CapsLock."
+    Case key.F1
+      textlabel1.Text = "Key code is: " & key.Code & ", F1 key."
+    Case key.F2
+      textlabel1.Text = "Key code is: " & key.Code & ", F2 key."
+    Case key.F3
+      textlabel1.Text = "Key code is: " & key.Code & ", F3 key."
+    Case key.F4
+      textlabel1.Text = "Key code is: " & key.Code & ", F4 key."
+    Case key.F5
+      textlabel1.Text = "Key code is: " & key.Code & ", F5 key."
+    Case key.F6
+      textlabel1.Text = "Key code is: " & key.Code & ", F6 key."
+    Case key.F7
+      textlabel1.Text = "Key code is: " & key.Code & ", F7 key."
+    Case key.F8
+      textlabel1.Text = "Key code is: " & key.Code & ", F8 key."
+    Case Else
+      If key.Code > 32 And key.Code < 128 Then
+        textlabel1.Text = "key code is: " & key.Code & ", " & Chr(key.Code)
+      Else
+        textlabel1.Text = "key code is: " & key.Code
+      Endif
+  End Select
+
+End
+
+Public Sub Form_KeyPress()
+
+  If key.Shift Then
+    textlabel1.Text = "Key code is: " & key.Code & ", SHIFT"
+  Else If key.Alt Then
+    textlabel1.Text = "Key code is: " & key.Code & ", ALT"
+  Else If key.Control Then
+    textlabel1.Text = "Key code is: " & key.Code & ", CTRL"
+  Else If key.Code > 32 And key.Code < 128 Then
+    textlabel1.Text = "key code is: " & key.Code & ", " & Chr(key.Code)
+  Else If key.Esc Then 'if an ESC key is pressed
+    textlabel1.Text = "key code is: " & key.Code & ", ESC"
+  Else
+    textlabel1.Text = "key code is: " & key.Code
+  Endif
+
+End
+
+Public Sub Form_Open()
+
+  Me.Caption = " Keyboard Operations "
+
+End

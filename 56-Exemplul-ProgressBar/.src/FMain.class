@@ -1,0 +1,59 @@
+' Gambas class file
+
+Static Public procent As Integer
+Static Public contor As Integer
+Const maxim As Integer = 100
+
+Public Sub Form_Open()
+
+  contor = 0
+  procent = 0
+  Timer1.Enabled = False
+  Timer1.Delay = 1000
+  Timer2.Enabled = False
+  Timer2.Delay = 4000
+  ProgressBar1.Value = 0
+  ProgressBar2.Value = 0
+
+End
+
+Public Sub Timer1_Timer()
+
+  If procent < maxim Then
+    procent = procent + 10
+    Label1.Text = "Procent actualizat " & Str(procent) & "%"
+    ProgressBar1.Value = procent / 100
+  Else
+    procent = 0
+    Timer1.Enabled = True
+  Endif
+
+End
+
+Public Sub Timer2_Timer()
+
+  If contor < maxim Then
+    contor = contor + 10
+    Label2.Text = "Procent ramas: " & Str(maxim - contor) & "%"
+    ProgressBar2.Value = contor / 100
+  Else
+    contor = 0
+    Timer2.Enabled = False
+    Timer1.Enabled = False
+  Endif
+
+End
+
+Public Sub Button1_Click()
+
+  Timer1.Enabled = True
+  Timer2.Enabled = True
+
+End
+
+Public Sub Button2_Click()
+
+  Timer1.Enabled = False
+  Timer2.Enabled = False
+
+End

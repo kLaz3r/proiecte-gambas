@@ -1,0 +1,32 @@
+# Gambas Form File 3.0
+
+{ Form Form
+  MoveScaled(0,0,64,40)
+  { Label1 Label
+    MoveScaled(11,6,14,3)
+    Text = ("Message Demo")
+  }
+  { Button1 Button
+    MoveScaled(9,15,16,4)
+    Text = ("Message.Info")
+  }
+  { Button2 Button
+    MoveScaled(9,20,16,4)
+    Text = ("Message.Warning")
+  }
+  { Button3 Button
+    MoveScaled(9,25,16,4)
+    Text = ("Message.Error")
+  }
+  { Button4 Button
+    MoveScaled(9,30,16,4)
+    Text = ("Message.Question")
+  }
+  { Button5 Button
+    MoveScaled(35,15,16,4)
+    Text = ("Message.Info")
+  }
+  { TextBox1 TextBox
+    MoveScaled(34,21,24,4)
+  }
+}

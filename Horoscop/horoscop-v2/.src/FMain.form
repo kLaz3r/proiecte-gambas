@@ -1,0 +1,108 @@
+# Gambas Form File 3.0
+
+{ Form Form
+  MoveScaled(0,0,131,65)
+  { ComboBox_Zodii ComboBox
+    MoveScaled(8,10,24,4)
+    Font = Font["+3"]
+    ReadOnly = True
+  }
+  { Label1 Label
+    MoveScaled(19,4,26,3)
+    Font = Font["+3"]
+    Alignment = Align.Center
+    Text = ("Alege o zodie!")
+  }
+  { Button_Start Button
+    MoveScaled(40,10,16,4)
+    Font = Font["+3"]
+    Text = ("Start")
+  }
+  { Panel1 Panel
+    MoveScaled(4.5,18,54.875,40.875)
+    { TextBox_Compatibilitate TextBox
+      MoveScaled(20,6,34,4)
+      Font = Font["+3"]
+      ReadOnly = True
+    }
+    { Label4 Label
+      MoveScaled(4,12,15,4)
+      Alignment = Align.Right
+      Text = ("Ora Norocoasa")
+    }
+    { TextBox_OraNorocoasa TextBox
+      MoveScaled(20,12,34,4)
+      Font = Font["+3"]
+      ReadOnly = True
+    }
+    { Label5 Label
+      MoveScaled(2,18,17,4)
+      Alignment = Align.Right
+      Text = ("Numarul Norocos")
+    }
+    { TextBox_NumarulNorocos TextBox
+      MoveScaled(20,18,34,4)
+      Font = Font["+3"]
+      ReadOnly = True
+    }
+    { Label6 Label
+      MoveScaled(0,24,19,4)
+      Alignment = Align.Right
+      Text = ("Culoare Norocoasa")
+    }
+    { TextBox_CuloareNorocoasa TextBox
+      MoveScaled(20,24,34,4)
+      Font = Font["+3"]
+      ReadOnly = True
+    }
+    { Label7 Label
+      MoveScaled(1,30,18,4)
+      Alignment = Align.Right
+      Text = ("Perioada Zodiei")
+    }
+    { TextBox_PerioadaZodiei TextBox
+      MoveScaled(20,30,34,4)
+      Font = Font["+3"]
+      ReadOnly = True
+    }
+    { Label8 Label
+      MoveScaled(5,36,14,4)
+      Alignment = Align.Right
+      Text = ("Stare")
+    }
+    { TextBox_Stare TextBox
+      MoveScaled(20,36,34,4)
+      Font = Font["+3"]
+      ReadOnly = True
+    }
+    { TextBox_DataCurenta TextBox
+      MoveScaled(20,0,34,4)
+      Font = Font["+3"]
+      ReadOnly = True
+    }
+    { Label2 Label
+      MoveScaled(5,0,14,4)
+      Alignment = Align.Right
+      Text = ("Data Curenta")
+    }
+    { Label3 Label
+      MoveScaled(0,6,19,4)
+      Alignment = Align.Right
+      Text = ("Compatibilitate")
+    }
+  }
+  { Separator1 Separator
+    MoveScaled(65,-2,1,67)
+  }
+  { Label9 Label
+    MoveScaled(91,3,16,3)
+    Font = Font["+3"]
+    Alignment = Align.Center
+    Text = ("Descriere")
+  }
+  { TextArea_Descriere TextArea
+    MoveScaled(69,8,59,54)
+    Font = Font["+5"]
+    Wrap = True
+  }
+}

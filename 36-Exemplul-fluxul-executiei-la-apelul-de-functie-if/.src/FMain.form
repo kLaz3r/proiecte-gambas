@@ -1,0 +1,23 @@
+# Gambas Form File 3.0
+
+{ Form Form
+  MoveScaled(0,0,64,24)
+  { Label1 Label
+    MoveScaled(9,5,42,3)
+    Text = ("Comparatie cu IIF si mesaje")
+  }
+  { SpinBox1 SpinBox
+    MoveScaled(8,12,9,4)
+  }
+  { SpinBox2 SpinBox
+    MoveScaled(28,12,9,4)
+  }
+  { Label2 Label
+    MoveScaled(18,12,8,3)
+    Text = (">=")
+  }
+  { Button1 Button
+    MoveScaled(40,12,16,4)
+    Text = ("Compara")
+  }
+}

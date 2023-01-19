@@ -1,0 +1,22 @@
+' Gambas class file
+
+Public i As Integer = 0
+Public WaitPLS As Boolean = False
+
+Public Sub Form_Open()
+
+  PictureBox1.Picture = Picture["AnimFrame" & (i Mod 13 + 1) & ".jpg"]
+
+End
+
+Public Sub Form_KeyPress()
+
+  If WaitPLS Then Return
+  WaitPLS = True
+  i += 1
+  PictureBox1.Picture = Picture["AnimFrame" & (i Mod 13 + 1) & ".jpg"]
+  Wait 0.1
+  PictureBox1.Show
+  WaitPLS = False
+
+End

@@ -1,0 +1,17 @@
+' Gambas class file
+
+Public Sub SpinBox1_Change()
+
+  If SpinBox1.Value <= 0 Then SpinBox1.Value = 1
+  If SpinBox1.Value >= 8 Then SpinBox1.Value = 7
+
+  Select Case SpinBox1.Value
+    Case 1 To 5
+      TextBox1.Text = "Zi lucratoare!"
+    Case 6
+      TextBox1.Text = "Sambata fac ore la FR"
+    Case 7
+      TextBox1.Text = "Si duminica fac ore la FR"
+  End Select
+
+End

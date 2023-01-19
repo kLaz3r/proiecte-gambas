@@ -1,0 +1,15 @@
+# Gambas Form File 3.0
+
+{ Form Form
+  MoveScaled(0,0,64,64)
+  { ListBox1 ListBox
+    MoveScaled(23,4,16,30)
+  }
+  { Button1 Button
+    MoveScaled(23,36,16,4)
+    Text = ("Cauta")
+  }
+  { TextBox1 TextBox
+    MoveScaled(19,43,24,4)
+  }
+}

@@ -1,0 +1,25 @@
+# Gambas Form File 3.0
+
+{ Form Form
+  MoveScaled(0,0,64,36)
+  { Label1 Label
+    MoveScaled(14.5,7,35,7)
+    Alignment = Align.Center
+    Text = ("Ruleaza android telefonul tau?")
+  }
+  { RadioButton1 RadioButton RadioButoane
+    Name = "RadioButton1"
+    MoveScaled(6,18,24,4)
+    Text = ("Samsung")
+  }
+  { RadioButton2 RadioButton RadioButoane
+    Name = "RadioButton2"
+    MoveScaled(6,22,24,4)
+    Text = ("iPhone")
+  }
+  { RadioButton3 RadioButton RadioButoane
+    Name = "RadioButton3"
+    MoveScaled(6,26,24,4)
+    Text = ("Nokia")
+  }
+}

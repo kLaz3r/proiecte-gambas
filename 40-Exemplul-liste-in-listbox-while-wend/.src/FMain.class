@@ -1,0 +1,33 @@
+' Gambas class file
+
+Public Sub Form_Open()
+
+  ListBox1.List = [2, 5, 12, 56, 91, 4, 23, 74, 51]
+
+End
+
+Public Sub Button1_Click()
+
+  Dim existent As Boolean = False
+  Dim i As Integer = 0
+
+  While (i < ListBox1.Count) And (Not existent)
+    If ListBox1.List[i] = TextBox1.Text Then
+      existent = True
+    Else
+      i = i + 1
+    Endif
+  Wend
+  If existent Then
+    Message.Info("Am găsit valoarea" & TextBox1.Text & " în lista!")
+  Else
+    Message.Error(" Nu am găsit valoarea" & TextBox1.Text & " în lista!")
+  Endif
+  Print ListBox1.Find(TextBox1.Text)
+  If ListBox1.Find(TextBox1.Text) > 0 Then
+    Message.Info("Am găsit valoarea" & TextBox1.Text & " in lista cu Find!")
+  Else
+    Message.Error(" Nu am găsit valoarea" & TextBox1.Text & " în lista cu Find!")
+  Endif
+
+End

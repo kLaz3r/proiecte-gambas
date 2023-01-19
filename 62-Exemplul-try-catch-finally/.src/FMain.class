@@ -1,0 +1,59 @@
+' Gambas class file
+
+Public Sub Button1_Click()
+
+  Print 10 / 0
+
+End
+
+Public Sub Button2_Click()
+
+  Try Print 10 / 0
+  If Error Then
+    Print "If Error is working!"
+    Message.Error("CLASS: " & Str(Error.class) & ", CODE: " & error.code & ", = " & error.text &
+      " AT: " & error.where, "OK")
+  Endif
+
+End
+
+Public Sub Button3_Click()
+
+  Print 10 / 0
+  Return
+Catch
+  Print "Catch functionează !"
+  If Error Then
+    Message.Error("Clasa: " & Str(Error.class) & ", Codul: " & Error.code & ", = " & Error.text & "AT: " & error.where, "Ok")
+  Endif
+
+End
+
+Public Sub Button4_Click()
+
+  Print 10 / 0
+  Return
+Finally
+  Print " Am ajuns la Finally! "
+  If Error Then
+    Message.Error("Clasa: " & Str(Error.class) & ", Codul: " & error.code & ", = " & error.text & "AT: " & error.where, " Ok ")
+  Endif
+
+End
+
+Public Sub Button5_Click()
+
+  Print 10 / 0
+  Return
+Finally
+  Print
+  If Error Then
+    Message.Error("Clasa: " & Str(Error.class) & ",Codul: " & error.code & ", = " & error.text & "AT: " & error.where, " Ok ")
+  Endif
+Catch
+  Print "Catch funcționează !"
+  If Error Then
+    Message.Error("Clasa: " & Str(Error.class) & ", Codul: " & error.code & ", = " & error.text & "AT: " & error.where, " Ok ")
+  Endif
+
+End

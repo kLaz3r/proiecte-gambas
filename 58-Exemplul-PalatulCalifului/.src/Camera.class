@@ -1,0 +1,7 @@
+' Gambas class file
+
+Public Nr As Integer
+Public Denumire As String
+Public Artefact As String
+Public Usa[4] As Integer
+Public Bani As Integer

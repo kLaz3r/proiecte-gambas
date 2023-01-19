@@ -1,0 +1,22 @@
+Format: 1.0
+Source: horoscop-v2-qt4
+Binary: horoscop-v2-qt4
+Architecture: all source
+Version: 0.0.3-1
+Checksums-Md5:
+ d7747ad5fb6b2fda5fe4154a08f171f5 540 horoscop-v2-qt4_0.0.3-1.dsc
+ ecfb710d3fa320a9bb725cec5aeb3e6c 1280 horoscop-v2-qt4_0.0.3-1_all.deb
+Checksums-Sha1:
+ cf7581f1661d6071972117b86051de70c6d1c839 540 horoscop-v2-qt4_0.0.3-1.dsc
+ 598af333e131764388ef7bfc48135d51e9a4cbaa 1280 horoscop-v2-qt4_0.0.3-1_all.deb
+Checksums-Sha256:
+ 1c7df58947648ca7cd5600f7f7b6858d4b9228c38a322dc6419881ddd51b70f5 540 horoscop-v2-qt4_0.0.3-1.dsc
+ 8f97730c12ec63910e74edea6962144c125df2e24d8729125a0530059f7f6251 1280 horoscop-v2-qt4_0.0.3-1_all.deb
+Build-Origin: Fedora
+Build-Architecture: amd64
+Build-Date: Thu, 19 Jan 2023 13:46:32 +0200
+Environment:
+ DEB_BUILD_OPTIONS="parallel=12"
+ LANG="en_US.UTF-8"
+ LC_ALL="en_US.UTF-8"
+ SOURCE_DATE_EPOCH="1674129600"

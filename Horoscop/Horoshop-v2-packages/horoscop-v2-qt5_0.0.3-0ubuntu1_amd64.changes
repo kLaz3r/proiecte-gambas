@@ -1,0 +1,31 @@
+Format: 1.8
+Date: Thu, 19 Jan 2023 12:00:00 +0000
+Source: horoscop-v2-qt5
+Binary: horoscop-v2-qt5
+Architecture: source all
+Version: 0.0.3-0ubuntu1
+Distribution: unstable
+Urgency: low
+Maintainer: nastu <nastu@fedora>
+Changed-By: nastu <nastu@fedora>
+Description:
+ horoscop-v2-qt5 - qt5 package for horoscop-v2
+Changes:
+ horoscop-v2-qt5 (0.0.3-0ubuntu1) unstable; urgency=low
+ .
+   * New release version
+Checksums-Sha1:
+ 1dd42de15f377fade62d3b3dbb34e1ea8caa0f43 571 horoscop-v2-qt5_0.0.3-0ubuntu1.dsc
+ aadfb84b7b28a8dd587ffd211198ec078c1fade6 815 horoscop-v2-qt5_0.0.3-0ubuntu1.tar.gz
+ f65eb07fa162ae2936470ef1db3713c9df3d1f29 1296 horoscop-v2-qt5_0.0.3-0ubuntu1_all.deb
+ 2d0e799e7871761509876df20616bf0e0e15fdaf 902 horoscop-v2-qt5_0.0.3-0ubuntu1_amd64.buildinfo
+Checksums-Sha256:
+ 4ac81cb7e0a68e986eb62bfcb373a9ab262226890913ada0d510f6c2e5ce9a7b 571 horoscop-v2-qt5_0.0.3-0ubuntu1.dsc
+ ffafbb2578b38cdcc3b92137fb2c04a193dfd301d77c86063abd465fdd88a3f6 815 horoscop-v2-qt5_0.0.3-0ubuntu1.tar.gz
+ 25ddd41521b45aba636787e5e6ba6e0ff60f8953ca7c17c4578dd37cb4e7f3a4 1296 horoscop-v2-qt5_0.0.3-0ubuntu1_all.deb
+ 72898347dd684bba58d8b2b9e14cff7151961467fc352890ba4144c02e227cdc 902 horoscop-v2-qt5_0.0.3-0ubuntu1_amd64.buildinfo
+Files:
+ 885f30ff0b1bd84d49c74fe6bb35baf9 571 contrib/embedded optional horoscop-v2-qt5_0.0.3-0ubuntu1.dsc
+ 42d37dadfbe88d768e222f182560439d 815 contrib/embedded optional horoscop-v2-qt5_0.0.3-0ubuntu1.tar.gz
+ 81ddd6857df981d5e74226ea10ccb755 1296 contrib/embedded optional horoscop-v2-qt5_0.0.3-0ubuntu1_all.deb
+ 1d41f3d510410b851af12614e9b47275 902 contrib/embedded optional horoscop-v2-qt5_0.0.3-0ubuntu1_amd64.buildinfo

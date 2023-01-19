@@ -1,0 +1,31 @@
+Format: 1.8
+Date: Thu, 19 Jan 2023 12:00:00 +0000
+Source: horoscop-v2
+Binary: horoscop-v2
+Architecture: source all
+Version: 0.0.3-0ubuntu1
+Distribution: unstable
+Urgency: low
+Maintainer: nastu <nastu@fedora>
+Changed-By: nastu <nastu@fedora>
+Description:
+ horoscop-v2 - Missing description.
+Changes:
+ horoscop-v2 (0.0.3-0ubuntu1) unstable; urgency=low
+ .
+   * New release version
+Checksums-Sha1:
+ e12c2b4d0f33635cf51bdc1bacd22e475c7f1ca5 965 horoscop-v2_0.0.3-0ubuntu1.dsc
+ b29c907d9f65ac8ce3ef5f8d439f106865d5aa6b 1171 horoscop-v2_0.0.3-0ubuntu1.diff.gz
+ ac60f17bcaf75c6bfa46d1c6d31f7d1048c4b0ac 26244 horoscop-v2_0.0.3-0ubuntu1_all.deb
+ cd973dab48d7260737da19466b7eb30ad84ad205 873 horoscop-v2_0.0.3-0ubuntu1_amd64.buildinfo
+Checksums-Sha256:
+ d0448f485b2798b157a7b8573f82c261d91bb36a3c61b7299cb9d48de2f15e98 965 horoscop-v2_0.0.3-0ubuntu1.dsc
+ 3d71c1e7a2c2304fcba75f5e6f3c3a197bc2e2bb58c823caf9195b15567a556e 1171 horoscop-v2_0.0.3-0ubuntu1.diff.gz
+ b2abdc4cebab9aa6d2aefb3dcf03e81128fb479d1c8cb003befe3bb61a1380f9 26244 horoscop-v2_0.0.3-0ubuntu1_all.deb
+ 7e982a9be5f759a8795a7f713751b7a8ae55e5fbffb96ea9dbdbc33365031241 873 horoscop-v2_0.0.3-0ubuntu1_amd64.buildinfo
+Files:
+ 37738992d21355f8de0c54fb29089955 965 contrib/embedded optional horoscop-v2_0.0.3-0ubuntu1.dsc
+ 302e813406ba82e3a2f0a3400d08f064 1171 contrib/embedded optional horoscop-v2_0.0.3-0ubuntu1.diff.gz
+ 77ba0ee360dd3f0fb98ea809a79a053c 26244 contrib/embedded optional horoscop-v2_0.0.3-0ubuntu1_all.deb
+ 187cc57dd49b8596ceda9252263d8568 873 contrib/embedded optional horoscop-v2_0.0.3-0ubuntu1_amd64.buildinfo

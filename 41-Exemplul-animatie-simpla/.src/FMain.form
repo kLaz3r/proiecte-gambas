@@ -1,0 +1,13 @@
+# Gambas Form File 3.0
+
+{ Form Form
+  MoveScaled(0,0,64,64)
+  { Label1 Label
+    MoveScaled(7,4,23,4)
+    Text = ("tine apasat o tasta")
+  }
+  { PictureBox1 PictureBox
+    MoveScaled(10,16,44,41)
+    Mode = PictureBox.Fill
+  }
+}

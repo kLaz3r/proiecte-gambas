@@ -1,0 +1,14 @@
+# Gambas Form File 3.0
+
+{ Form Form
+  MoveScaled(0,0,64,24)
+  { TextLabel1 TextLabel
+    MoveScaled(20.5,4,23,6)
+    Alignment = Align.Center
+  }
+  { Label1 Label
+    MoveScaled(11.5,13,41,4)
+    Font = Font["+1,Bold"]
+    Text = ("Press Any Key") & "..."
+  }
+}

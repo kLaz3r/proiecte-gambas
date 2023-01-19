@@ -1,0 +1,16 @@
+' Gambas class file
+
+Public Sub Button1_Click()
+
+  Dim a As Integer = ValueBox1.Value
+  Dim b As Integer = ValueBox2.Value
+  Dim c As Integer = ValueBox3.Value
+  Dim max As Integer = 0
+
+  If a >= b And If a >= c Then max = a
+  If b >= a And If b >= c Then max = b
+  If c >= a And If c >= b Then max = c
+  ValueBox4.Value = max
+  ValueBox4.Show()
+
+End

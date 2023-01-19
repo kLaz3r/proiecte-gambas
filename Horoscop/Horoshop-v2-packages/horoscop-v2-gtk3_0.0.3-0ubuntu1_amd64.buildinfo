@@ -1,0 +1,22 @@
+Format: 1.0
+Source: horoscop-v2-gtk3
+Binary: horoscop-v2-gtk3
+Architecture: all source
+Version: 0.0.3-0ubuntu1
+Checksums-Md5:
+ 20a0a615413d6697159497ffe0193f76 577 horoscop-v2-gtk3_0.0.3-0ubuntu1.dsc
+ 846f6d29dc75f6680094129d3fbb5bbf 1292 horoscop-v2-gtk3_0.0.3-0ubuntu1_all.deb
+Checksums-Sha1:
+ abd1396035b53aefd2db797ef15561ebbdd8a772 577 horoscop-v2-gtk3_0.0.3-0ubuntu1.dsc
+ 1af78fae5f76977917b3cdc1b642b31f787c8c2f 1292 horoscop-v2-gtk3_0.0.3-0ubuntu1_all.deb
+Checksums-Sha256:
+ e7ad314d082a8f76d3755a1aa917bedd4ab09838f9b4156cbc0c3e0546f58817 577 horoscop-v2-gtk3_0.0.3-0ubuntu1.dsc
+ 877aebb503e94150985306500bb8bb8d5a5040753c904a1eccc364b4fc98759c 1292 horoscop-v2-gtk3_0.0.3-0ubuntu1_all.deb
+Build-Origin: Fedora
+Build-Architecture: amd64
+Build-Date: Thu, 19 Jan 2023 13:46:40 +0200
+Environment:
+ DEB_BUILD_OPTIONS="parallel=12"
+ LANG="en_US.UTF-8"
+ LC_ALL="en_US.UTF-8"
+ SOURCE_DATE_EPOCH="1674129600"

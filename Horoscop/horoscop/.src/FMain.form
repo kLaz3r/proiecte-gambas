@@ -1,0 +1,92 @@
+# Gambas Form File 3.0
+
+{ Form Form
+  MoveScaled(0,0,57,90)
+  { ButtonSend Button
+    MoveScaled(36,14,16,4)
+    Text = ("Trimite")
+  }
+  { LabelCurrentDate Label
+    MoveScaled(6,22,19,4)
+    Alignment = Align.Right
+    Text = ("Data Curenta: ")
+  }
+  { TextBoxCurrentDate TextBox
+    MoveScaled(26,22,24,4)
+    ReadOnly = True
+  }
+  { LabelCompatibility Label
+    MoveScaled(6,27,19,4)
+    Alignment = Align.Right
+    Text = ("Compatibilitate: ")
+  }
+  { TextBoxCompatibility TextBox
+    MoveScaled(26,27,24,4)
+    ReadOnly = True
+  }
+  { LabelLuckyTime Label
+    MoveScaled(6,32,19,4)
+    Alignment = Align.Right
+    Text = ("Ora Norocoasa: ")
+  }
+  { TextBoxLuckyTime TextBox
+    MoveScaled(26,32,24,4)
+    ReadOnly = True
+  }
+  { LabelLuckyNumber Label
+    MoveScaled(6,37,19,4)
+    Alignment = Align.Right
+    Text = ("Numarul Norocos: ")
+  }
+  { TextBoxLuckyNumber TextBox
+    MoveScaled(26,37,24,4)
+    ReadOnly = True
+  }
+  { LabelColor Label
+    MoveScaled(6,42,19,4)
+    Alignment = Align.Right
+    Text = ("Culoare: ")
+  }
+  { TextBoxColor TextBox
+    MoveScaled(26,42,24,4)
+    ReadOnly = True
+  }
+  { LabelDateRange Label
+    MoveScaled(6,47,19,4)
+    Alignment = Align.Right
+    Text = ("Perioada Zodiei: ")
+  }
+  { TextBoxDateRange TextBox
+    MoveScaled(26,47,24,4)
+    ReadOnly = True
+  }
+  { LabelMood Label
+    MoveScaled(6,52,19,4)
+    Alignment = Align.Right
+    Text = ("Stare: ")
+  }
+  { TextBoxMood TextBox
+    MoveScaled(26,52,24,4)
+    ReadOnly = True
+  }
+  { LabelDescriere Label
+    MoveScaled(19.5,59,19,4)
+    Alignment = Align.Center
+    Text = ("Descriere: ")
+  }
+  { TextAreaDescriere TextArea
+    MoveScaled(8.5,64,41,20)
+    ReadOnly = True
+    Wrap = True
+  }
+  { ComboBox1 ComboBox
+    MoveScaled(6,14,29,4)
+    List = [("aries"), ("taurus"), ("gemini"), ("cancer"), ("leo"), ("virgo"), ("libra"), ("scorpio"), ("sagittarius"), ("capricorn"), ("aquarius"), ("pisces")]
+  }
+  { Label1 Label
+    MoveScaled(5.5,3,47,9)
+    Font = Font["+9"]
+    Alignment = Align.Center
+    Text = ("Alege o zodie!")
+  }
+}

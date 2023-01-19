@@ -1,0 +1,19 @@
+# Gambas Form File 3.0
+
+{ Form Form
+  MoveScaled(0,0,64,26)
+  { SpinBox1 SpinBox
+    MoveScaled(13,9,9,4)
+  }
+  { SpinBox2 SpinBox
+    MoveScaled(39,9,9,4)
+  }
+  { Button1 Button
+    MoveScaled(9,16,16,4)
+    Text = ("byVal")
+  }
+  { Button2 Button
+    MoveScaled(35,16,16,4)
+    Text = ("byRef")
+  }
+}

@@ -1,0 +1,101 @@
+' Gambas class file
+
+Const inchisa As Integer = -1
+Public P[3] As Camera
+Static Public Salacrt As Integer = 0
+Static Public Nrusa As Integer
+
+Public Sub Form_Open()
+
+  Dim i As Integer
+
+  For i = 0 To 2
+    P[i] = New Camera
+  Next
+
+  Print "Mobilam Camera 0"
+  P[0].Nr = 0
+  P[0].Bani = 10
+  P[0].Denumire = "Sala de intrare"
+  P[0].Artefact = "Vas din China"
+  P[0].Usa[0] = inchisa
+  P[0].Usa[1] = inchisa
+  P[0].Usa[2] = inchisa
+  P[0].Usa[3] = 1
+
+  Print "Mobilam Camera 1"
+  P[1].Nr = 1
+  P[1].Bani = 100
+  P[1].Denumire = "Sala tronului"
+  P[1].Artefact = "Tronul"
+  P[1].Usa[0] = inchisa
+  P[1].Usa[1] = 0
+  P[1].Usa[2] = 2
+  P[1].Usa[3] = inchisa
+
+  Print "Mobilam Camera 2"
+  P[2].Nr = 2
+  P[2].Bani = 10
+  P[2].Denumire = "Sala tezaurului"
+  P[2].Artefact = "Cufar cu nestemate"
+  P[2].Usa[0] = inchisa
+  P[2].Usa[1] = inchisa
+  P[2].Usa[2] = inchisa
+  P[2].Usa[3] = 1
+
+  EstiInCamera(Salacrt)
+
+End
+
+Public Sub EstiInCamera(k As Integer)
+
+  TextLabel1.Text = Str(P[k].Nr)
+  TextLabel2.Text = P[k].Denumire
+  TextLabel3.Text = P[k].Artefact
+  TextLabel4.Text = Str(P[k].Bani)
+
+End
+
+Public Sub Button1_Click()
+
+  If p[Salacrt].Usa[0] == inchisa Then
+    Message.Info("Usa 0 este Inchisa!")
+  Else
+    Salacrt = P[Salacrt].Usa[0]
+    EstiInCamera(Salacrt)
+  Endif
+
+End
+
+Public Sub Button2_Click()
+
+  If p[Salacrt].Usa[1] == inchisa Then
+    Message.Info("Usa 1 este Inchisa!")
+  Else
+    Salacrt = P[Salacrt].Usa[1]
+    EstiInCamera(Salacrt)
+  Endif
+
+End
+
+Public Sub Button3_Click()
+
+  If p[Salacrt].Usa[2] == inchisa Then
+    Message.Info("Usa 2 este Inchisa!")
+  Else
+    Salacrt = P[Salacrt].Usa[2]
+    EstiInCamera(Salacrt)
+  Endif
+
+End
+
+Public Sub Button4_Click()
+
+  If p[Salacrt].Usa[3] == inchisa Then
+    Message.Info("Usa 3 este Inchisa!")
+  Else
+    Salacrt = P[Salacrt].Usa[3]
+    EstiInCamera(Salacrt)
+  Endif
+
+End

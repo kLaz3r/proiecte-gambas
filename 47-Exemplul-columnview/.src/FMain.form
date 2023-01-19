@@ -1,0 +1,20 @@
+# Gambas Form File 3.0
+
+{ Form Form
+  MoveScaled(0,0,84,48)
+  { ColumnView1 ColumnView
+    MoveScaled(6,7,54,36)
+  }
+  { Button1 Button
+    MoveScaled(64,7,16,4)
+    Text = ("Quit")
+  }
+  { Button2 Button
+    MoveScaled(64,23,16,4)
+    Text = ("Clear")
+  }
+  { Button3 Button
+    MoveScaled(64,39,16,4)
+    Text = ("Reset")
+  }
+}

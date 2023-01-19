@@ -1,0 +1,12 @@
+# Gambas Form File 3.0
+
+{ Form Form
+  MoveScaled(0,0,64,25)
+  { TextBox1 TextBox
+    MoveScaled(6,11,24,4)
+  }
+  { Button1 Button
+    MoveScaled(37,11,16,4)
+    Text = ("Test")
+  }
+}

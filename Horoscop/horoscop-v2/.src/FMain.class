@@ -1,0 +1,97 @@
+' Gambas class file
+
+Static Public Zodii As String[] = ["Berbec", "Taur", "Gemeni", "Rac", "Leu", "Fecioara", "Balanta", "Scorpion", "Sagetator", "Capricorn", "Varsator", "Pesti"] ' 12
+Static Public ZodiiPerioada As String[] = ["21 martie - 20 aprilie", "21 aprilie - 21 mai", "22 mai - 21 iunie", "22 iunie - 22 iulie", "23 iulie - 22 august", "23 august - 22 septembrie", "23 septembrie - 22 octombrie", "23 octombrie - 21 noiembrie", "22 noiembrie - 21 decembrie", "22 decembrie - 19 ianuarie", "20 ianuarie - 18 februarie", "19 februarie - 20 martie"] ' 12
+Static Public Culori As String[] = ["Albastru", "Maro", "Verde", "Gri", "Magenta", "Portocaliu", "Roz", "Violet", "Rosu", "Galben"] ' 13
+Static Public Culori2 As String[] = ["Deschis", "Inchis"] ' 2
+Static Public Stari As String[] = ["Surprins", "Stresat", "Nebun", "Iubit", "Singur", "Ciudat", "Incomod", "Obosit", "Recunoscator", "Simpatic", "Inteligent", "Adormit", "Prostut", "Multumit", "Pesimist", "Bolnav", "Socat", "Satisfacut", "Trist", "Grabit", "Nelinistit", "Usurat", "Relaxat", "Reintinerit", "Respins", "Revigorat", "Reclinat", "Pasnic", "Optimist", "Bine", "Amortit", "Infuriat", "Indiferent", "Morocanos", "Neastamparat", "Melancolic", "Lipsit", "Letargic", "Lenes", "Gelos", "Iritat", "Irascibil", "Impresionat", "Flamand", "Fericit", "Vinovat", "Recunoscator", "Nemultumit", "Bun", "Morocanos", "Complet", "Frustrat", "Epuizat", "Infuriat", "Energetic", "Anxios", "Suparat", "Extaziat", "Secatuit", "Dezamagit", "Hotarat", "Deprimat", "Intunecat", "Cinic", "Curios", "Singur", "Agresiv", "Realizat", "Confuz", "Rece", "Vesel", "Calm", "Plin de viata", "Plictisit", "Fericit", "Dulce-amarui", "Rusinat", "Apatetic", "Amuzat", "Invidios", "Entuziasmat"] ' 87
+
+Static Public Descrieri As String[] = ["Este o zi buna pentru secrete... din cele frumoase, in care planuiesti o surpriza pentru un prieten sau faci o favoare in secret. Sentimentul de caldura pe care ti-l ofera este o recompensa suficienta.", "Incerci cu nervozitate sa aduni fiecare informatie inainte de a face pasul. Desi instinctul este laudabil, uneori trebuie sa faci acel salt.", "Sa le spui exact cum ar trebui sa faca este extrem de tentant, dar oare va contribui de fapt la imbunatatirea situatiei? Lasati-i sa se descurce, doar pentru moment - va puteti oferi ajutorul pe parcurs.", "Revizuiti planul dumneavoastra preferat, reganditi-va strategia implicita, recalculati cifrele deja calculate. Fie ca este vorba de domeniul financiar, de munca sau personal, o anumita creativitate practica este foarte binevenita.", "Vrei sa treci la partea interesanta - marile principii si calea spre viitor. Inainte de a ajunge acolo, insa, trebuie acoperite mici detalii si trebuie facuti pasi mai mici. Relaxati-va.", "Ce zici de putina companie? Distractia cu ceilalti vine in mod natural acum, asa ca organizeaza o iesire cu prietenii sau fa o intalnire improvizata.", "Ti-ai pus toate lucrurile in ordine si chiar ti-a mai ramas timp sa ajuti pe cineva cu probleme organizatorice sa le puna si pe ale sale in ordine. Si bonusul? Un sentiment de caldura si o karma buna.", "Treci din nou in modul de cercetare inainte de a-ti dezvolta planul mai departe - acest lucru este valabil atat pentru eforturile de la serviciu, cat si pentru problemele de suflet. Aduna mai multe informatii inainte de a continua.", "Treceti peste baliverne in toate domeniile. Intrebati direct oamenii ce vor si insistati asupra unui raspuns direct; spuneti ceea ce vreti sa spuneti si fiti sinceri in ceea ce spuneti. Veti simplifica lucrurile in mod considerabil (si vi se va multumi din belsug la final).", "Acum sunteti un foarte bun ascultator, puneti intrebari patrunzatoare si va asumati un rol activ fara a schimba subiectul. Daca tot o faceti, ascultati-va la fel de activ si propria inima.", "Nu-ti place sa fii suspicios fata de ceilalti, dar ceva iti spune sa examinezi mai atent motivatiile puse la mijloc. Asculta-ti vocea interioara si obtine niste raspunsuri clare.", "Modestia te caracterizeaza. Lasa-i pe ceilalti sa se agite in legatura cu urmatorul lucru important - tu te ocupi linistit, eficient, de detalii. Daca iei si tu apararea celor defavorizati, karma ta va beneficia enorm de mult."]
+
+Public Sub Form_Open()
+
+  ComboBox_Zodii.List = Zodii
+
+End
+
+Public Sub Button_Start_Click()
+
+  Dim DataCurenta As String = getDataCurenta()
+  Dim Compatibilitate As String = getCompatibilitate(ComboBox_Zodii.Text)
+  Dim OraNorocoasa As Integer = getOraNorocoasa()
+  Dim NumarulNorocos As Integer = getNumarulNorocos()
+  Dim CuloareNorocoasa As String = getCuloareNorocoasa()
+  Dim PerioadaZodiei As String = getPerioadaZodiei(ComboBox_Zodii.Text)
+  Dim Stare As String = getStare()
+  Dim Descriere As String = getDescriere(ComboBox_Zodii.Text, DataCurenta, Compatibilitate, OraNorocoasa, NumarulNorocos, CuloareNorocoasa, PerioadaZodiei, Stare)
+
+  TextBox_DataCurenta.Text = DataCurenta
+  TextBox_Compatibilitate.Text = Compatibilitate
+  TextBox_OraNorocoasa.Text = OraNorocoasa
+  TextBox_NumarulNorocos.Text = NumarulNorocos
+  TextBox_CuloareNorocoasa.Text = CuloareNorocoasa
+  TextBox_PerioadaZodiei.Text = PerioadaZodiei
+  TextBox_Stare.Text = Stare
+  TextArea_Descriere.Text = Descriere
+
+End
+
+Public Function getDataCurenta() As String
+
+  Dim Data As String = Str(Now)
+
+  Return Left(Data, 10)
+
+End
+
+Public Function getCompatibilitate(ZodiaCurenta As String) As String
+
+  Dim Rand As Integer = Int(Rnd(0, 12))
+
+  If Zodii[Rand] = ZodiaCurenta Then
+    Return getCompatibilitate(ZodiaCurenta)
+  Else
+    Return Zodii[Rand]
+  Endif
+
+End
+
+Public Function getOraNorocoasa() As Integer
+
+  Return Int(Rnd(0, 24))
+
+End
+
+Public Function getNumarulNorocos() As Integer
+
+  Return Int(Rnd(0, 99))
+
+End
+
+Public Function getCuloareNorocoasa() As String
+
+  Return Culori[Int(Rnd(0, 10))] & " " & Culori2[Int(Rnd(0, 2))]
+
+End
+
+Public Function getPerioadaZodiei(ZodiaCurenta As String) As String
+
+  Dim NumarZodie As Integer = Zodii.Find(ZodiaCurenta)
+
+  Return ZodiiPerioada[NumarZodie]
+
+End
+
+Public Function getStare() As String
+
+  Return Stari[Int(Rnd(0, 81))]
+
+End
+
+Public Function getDescriere(ZodiaCurenta As String, DataCurenta As String, Compatibilitate As String, OraNorocoasa As Integer, NumarulNorocos As Integer, CuloareNorocoasa As String, PerioadaZodiei As String, Stare As String) As String
+
+  Dim Descriere As String = "Astazi, " & DataCurenta & ", zodia " & ZodiaCurenta & " cu perioada " & PerioadaZodiei & " se va intelege bine cu zodia " & Compatibilitate & ". Nivelul maxim de noroc va fi la ora " & OraNorocoasa & ", asa ca nativii " & ZodiaCurenta & " vor trebui sa tina cont. De asemenea, numarul " & NumarulNorocos & " va fi numarul cu noroc pentru aceasta zodie. Culoarea " & CuloareNorocoasa & " va iesi in evidenta pentru zodia " & ZodiaCurenta & ", cei mai inspirati vor profita de aceasta culoare pentru un plus de noroc. Nativul " & ZodiaCurenta & " se va simti " & Stare & " astazi, asta i-ar putea influenta ziua destul de drastic. \n \n \n" & Descrieri[Int(Rnd(0, 12))]
+
+  Return Descriere
+
+End
